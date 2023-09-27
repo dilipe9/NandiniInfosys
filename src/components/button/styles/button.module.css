@@ -1,0 +1,91 @@
+.btnPrimary,
+.btnSmall {
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: var(--button-color);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  min-width: 7rem;
+  max-width: 12rem;
+  /* min-width: 5rem !important; */
+  transition: all 0.5s;
+  overflow:hidden;
+  position:relative;
+}
+.btnSmall {
+  min-width: 4rem;
+  max-width: 4rem;
+}
+.hide {
+  display: none;
+}
+.bigbtnPrimary {
+  margin-left: 30px;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: var(--button-color2);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  flex-grow: 1;
+  /* max-width: 20%; */
+  transition: all 0.2s;
+}
+
+.btnPrimary:before,
+.bigbtnPrimary:before,
+.btnSmall:before {
+  content:'';
+  position:absolute;
+  width:0px;
+  height:0px;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  border-radius:50%;
+  background:rgba(0,0,0,0.5);
+}
+
+.btnPrimary:hover:before,.btnPrimary:active:before,
+.bigbtnPrimary:hover:before,.bigbtnPrimary:active:before,
+.btnSmall:hover:before,.btnSmall:active:before {
+  width:150px;
+  height:150px;
+  opacity: 0;
+  transition:1s;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  justify-self: flex-end !important;
+  align-self: center;
+}
+.top {
+  align-self: flex-start !important;
+}
+.left {
+  position: absolute;
+  left: 0;
+  justify-self: flex-end !important;
+  align-self: center;
+}
+@media only screen and (max-width: 1200px) {
+  .btnPrimary,
+  .bigbtnPrimary {
+    /* flex-grow: 1; */
+    min-width: 5rem;
+    max-width: 12rem;
+    position: relative;
+  }
+}
+.btnfull {
+  width: 100% !important;
+  max-width: 100%;
+}

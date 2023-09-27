@@ -1,0 +1,88 @@
+.sideMenu {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  color: #ffffff;
+  overflow: scroll;
+}
+.sideMenu::-webkit-scrollbar {
+  display: none;
+}
+.ulHeader {
+  display: flex !important;
+  justify-content: space-between !important;
+  cursor: pointer;
+  padding:0.4rem;
+  margin-bottom:15px !important;
+}
+.sideMenu :is(p) {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  width:100%;
+  padding: 0.3rem;
+}
+.sideMenu :is(p) svg {
+  margin-right:5px;
+}
+.sideMenu :is(p) span:nth-child(2) svg{
+  width:9px;
+}
+
+.sideMenu :is(p) span:nth-child(2) {
+  padding-right: 5px;
+}
+.sideMenu ul {
+  width: 100%;
+  padding-left: 0;
+  margin: 0;
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+  list-style: inside;
+  background: var(--primary-color);
+}
+.sideMenu ul li {
+  transition: all 0.1s;
+  padding: 1px 0;
+  padding-left: 17px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1.5rem;
+  list-style: none;
+  position:relative;
+  display: block;
+}
+.sideMenu ul li:before {
+  content:'';
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  width:2px;
+}
+.sideMenu ul li:hover:before {
+  background:#b9ff2f;
+}
+
+.companyLogo {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  line-height: 0;
+  border-right: 1px solid #ccc;
+}
+.companyLogo img {
+  background-color: white;
+  padding: 10px;
+  height: 63px;
+  width: 100%;
+  object-fit: contain;
+}
+.active {
+  font-weight: bold;
+  color: rgb(196, 255, 47);
+}
