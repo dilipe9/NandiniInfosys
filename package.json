@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@syncfusion/ej2-react-buttons": "^23.1.39",
+    "@syncfusion/ej2-react-grids": "^23.1.39",
+    "@syncfusion/ej2-react-inputs": "^23.1.38",
+    "@syncfusion/ej2-react-popups": "^23.1.38",
     "axios": "^1.4.0",
     "react": "^18.0.2",
     "react-dom": "^18.0.2",
