@@ -9,6 +9,17 @@ export const SummaryWareHouse = () => {
         <div className={styles.graphContainer}>
           <div className={styles.graphsubContainer}>
             <div className={styles.graphmainContainer}>
+              <div
+                style={{
+                  background: "#16619f",
+                  color: "white",
+                  textAlign: "center",
+                  borderRadius: "30px",
+                  height: "25px",
+                }}
+              >
+                My Daily Activities
+              </div>
               <PieChart />
               <div className={styles.activeUserConatiner}>
                 <div className={styles.activeUsersubContainer}>
@@ -155,6 +166,17 @@ export const SummaryWareHouse = () => {
         <div className={styles.graphContainer}>
           <div className={styles.graphsubContainer}>
             <div className={styles.graphmainContainer}>
+              <div
+                style={{
+                  background: "#16619f",
+                  color: "white",
+                  textAlign: "center",
+                  borderRadius: "30px",
+                  height: "25px",
+                }}
+              >
+                My Daily Activities
+              </div>
               <PieChart />
               <div className={styles.activeUserConatiner}>
                 <div className={styles.activeUsersubContainer}>

@@ -1,3 +1,14 @@
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-calendars/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-notifications/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-grids/styles/material.css";
+
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@100;400;500;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500&display=swap");
 
 iframe {
@@ -152,4 +163,139 @@ body {
 }
 .copyright > * {
   margin-inline: 5px;
+}
+.purchaseTransactionLabel {
+  position: absolute;
+  transform: translateY(-1.5rem);
+  margin-bottom: 7px;
+  color: #878787;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.select_period_purchaseTransactionCss {
+  position: absolute;
+  left: 0;
+  top: 0;
+  outline: none;
+  border: none;
+  background-color: var(--forth-color);
+  color: var(--text-primary-color);
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  padding-left: 1rem;
+  transition: all 0.2s;
+  font-size: 0.8rem;
+  border-bottom: 1px solid transparent;
+  border-radius: 4px;
+  background-image: linear-gradient(45deg, transparent 77%, white 69%),
+    linear-gradient(135deg, white 57%, transparent 61%),
+    linear-gradient(to right, transparent 30%, var(--primary-color) 30%);
+  background-position: calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 8px) calc(1em + 2px), 100% 0;
+  background-size: 7px 7px, 7px 4px, 3.1em 3.1em;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+}
+
+.selectContainerCss {
+  margin-block: 1.1rem;
+  margin-inline: 0.5rem;
+  position: relative;
+  height: 2rem;
+  flex-shrink: 1;
+  min-width: 15rem;
+}
+.actionIconRow {
+  justify-content: right;
+  padding: 0px !important;
+  align-items: center;
+  text-align: end;
+  padding-right: 10px !important;
+}
+.actionIconContainer {
+  margin-top: 10px;
+  background: rgb(218 218 218);
+
+  border-radius: 25px;
+  padding: 2px 7px 0px;
+}
+.actionIconImg {
+  width: 25px;
+  margin: 5px;
+  cursor: pointer;
+  filter: drop-shadow(0px 2px 4px black);
+}
+.validation-error-msg {
+  font-size: 12px;
+  color: #f00;
+  font-weight: 500;
+  font-style: oblique;
+}
+.row > [class^="col-"] {
+  margin-bottom: 0.5rem;
+}
+.form-check-inline {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0;
+  margin-right: 0.75rem;
+}
+.e-tab .e-tab-header .e-toolbar-item.e-active .e-tab-wrap {
+  border: 0;
+  background: #165f9d;
+  border-radius: 7px;
+}
+.e-tab .e-tab-header .e-toolbar-item.e-active .e-tab-text {
+  color: #fefefe;
+}
+.e-tab .e-tab-header .e-toolbar-item.e-active .e-tab-wrap:hover .e-tab-text {
+  color: #fefefe;
+}
+
+.tabContainer_targetSCheme {
+  border: 1px solid #dedede;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.tabContainer_targetSChemechild {
+  border: 1px solid #dedede;
+  border-radius: 15px;
+  /* margin: 10px; */
+  padding: 10px;
+  /* box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.5); */
+}
+.e-tab .e-tab-header .e-indicator {
+  background: #16619f;
+}
+.e-tab .e-tab-header .e-toolbar-item .e-tab-wrap {
+  border-radius: 7px;
+  background-color: #dedede;
+  margin: 5px;
+}
+.e-tab .e-tab-header .e-toolbar-item .e-tab-wrap:hover .e-tab-text {
+  color: #dedede;
+}
+.e-tab .e-tab-header .e-toolbar-item .e-tab-wrap:hover {
+  border-radius: 7px;
+  background-color: #16619f;
+}
+.textBoxWithActionBtnContainer {
+  height: 45px;
+}
+.getListButtonRightArrow {
+  line-height: 1 !important;
+  padding: 3px !important;
+  margin-left: 5px;
+  font-size: 25px !important;
+  margin-top: 1px;
+  height: 39px;
+  background: #16619f !important;
+  border: none !important;
+}
+#SchemeProcessIcons > .actionIconRow {
+  justify-content: left;
 }

@@ -1,0 +1,20 @@
+.form_form__purchaseTransaction {
+  position: relative;
+  display: flex;
+  padding: 1rem;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  flex-direction: column;
+  min-width: 306px;
+  flex: 1 1;
+  overflow: auto;
+  /* flex-wrap: wrap; */
+  background-color: var(--white);
+}
+
+.e-grid .e-headercell,
+.e-grid .e-detailheadercell {
+  background-color: #16619f;
+  border-color: #e0e0e0;
+  color: #fff;
+}

@@ -9,9 +9,22 @@ export const QuantityGraph = () => {
       <div className={styles.summarySection}>
         <div className={styles.summaryConatiner}>
           <div className={styles.summaryBg}>
-            <div className={styles.summaryHeading}>
-              <p>Value</p>
+            {/* <div className={styles.summaryHeading}> */}
+            <div
+              style={{
+                background: "#16619f",
+                color: "white",
+                textAlign: "center",
+                borderRadius: "30px",
+                height: "25px",
+                marginTop: "20px",
+                marginLeft: "20px",
+                marginRight: "20px",
+              }}
+            >
+              Value
             </div>
+            {/* </div> */}
             <div className={styles.chartBox}>
               <AreaChart />
             </div>

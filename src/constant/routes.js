@@ -29,145 +29,171 @@ import EmployeeMaster from "../Pages/Masters/EmployeeMaster";
 import RoleMaster from "../Pages/Masters/RoleMaster";
 import UserMaster from "../Pages/Masters/UserMaster";
 import Settings from "../Pages/Masters/SettingMaster";
+
+//Reports
 import SYnc from "../Pages/Reports/Sync";
 import Statistics from "../Pages/Reports/Statistics";
+import PurchaseTransaction from "../Pages/Reports/Purchase";
+
+//Scheme
+import TargetScheme from "../Pages/Scheme/TargetScheme";
+import SchemeProcess from "../Pages/Scheme/SchemeProcess";
 
 const routes = [
-	{
-		path: "/postlogin/dashboard",
-		icon: AiFillDashboard,
-		name: "Dashboard",
-		component: Dashboard,
-		type: "parent",
-	},
+  {
+    path: "/postlogin/dashboard",
+    icon: AiFillDashboard,
+    name: "Dashboard",
+    component: Dashboard,
+    type: "parent",
+  },
 
-	{
-		name: "BI Dashboard",
-		type: "parent",
-		icon: AiFillDashboard,
-		children: [
-			{
-				name: "Sales Dashboard",
-				path: "/postlogin/sales",
-				component: SalesDashBoard,
-			},
-			{
-				name: "HR Dashboard",
-				path: "/postlogin/hr",
-				component: HRDashboard,
-			},
-			{
-				name: "Outstanding Dashboard",
-				path: "/postlogin/outstanding",
-				component: OSDashbord,
-			},
-		],
-	},
-	{
-		name: "Masters",
-		type: "parent",
-		icon: AiFillDashboard,
-		children: [
-			{
-				name: "Designation",
-				component: DesignationMaster,
-			},
-			{
-				name: "Department",
-				component: DepartmentMaster,
-			},
-			{
-				name: "Employee",
-				component: EmployeeMaster,
-			},
-			{
-				name: "Role",
-				component: RoleMaster,
-			},
-			{
-				name: "User",
-				component: UserMaster,
-			},
-			{
-				name: "Setting",
-				component: Settings,
-			},
-		],
-	},
-	{
-		name: "Tally Data",
-		type: "parent",
-		icon: AiFillDashboard,
-		children: [
-			{
-				name: "Company",
-				component: Company,
-			},
-			{
-				name: "Cost Category",
-				component: CostCategory,
-			},
-			{
-				name: "Cost Center",
-				component: CostCenter,
-			},
-			{
-				name: "Currency",
-				component: Currency,
-			},
-			{
-				name: "Group",
-				component: Group,
-			},
-			{
-				name: "Ledger",
-				component: Ledger,
-			},
-			{
-				name: "Stock Category",
-				component: StockCategory,
-			},
-			{
-				name: "Stock Godown",
-				component: StockGodown,
-			},
-			{
-				name: "Stock Group",
-				component: StockGroup,
-			},
-			{
-				name: "Stock Item",
-				component: StockItem,
-			},
-			{
-				name: "Stock Unit",
-				component: StockUnit,
-			},
-			{
-				name: "Voucher Type",
-				component: VoucherType,
-			},
-			{
-				name: "Transactions",
-				component: Transaction,
-			},
-		],
-	},
-	{
-		name: "Reports",
-		type: "parent",
-		icon: AiFillDashboard,
-		children: [
-			{
-				name: "Statistics",
-				component: Statistics,
-			},
-			{
-				name: "Sync Report",
-				component: SYnc,
-			},
-		],
-	},
+  {
+    name: "BI Dashboard",
+    type: "parent",
+    icon: AiFillDashboard,
+    children: [
+      {
+        name: "Sales Dashboard",
+        path: "/postlogin/sales",
+        component: SalesDashBoard,
+      },
+      {
+        name: "HR Dashboard",
+        path: "/postlogin/hr",
+        component: HRDashboard,
+      },
+      {
+        name: "Outstanding Dashboard",
+        path: "/postlogin/outstanding",
+        component: OSDashbord,
+      },
+    ],
+  },
+  {
+    name: "Masters",
+    type: "parent",
+    icon: AiFillDashboard,
+    children: [
+      {
+        name: "Designation",
+        component: DesignationMaster,
+      },
+      {
+        name: "Department",
+        component: DepartmentMaster,
+      },
+      {
+        name: "Employee",
+        component: EmployeeMaster,
+      },
+      {
+        name: "Role",
+        component: RoleMaster,
+      },
+      {
+        name: "User",
+        component: UserMaster,
+      },
+      {
+        name: "Setting",
+        component: Settings,
+      },
+    ],
+  },
+  {
+    name: "Tally Data",
+    type: "parent",
+    icon: AiFillDashboard,
+    children: [
+      {
+        name: "Company",
+        component: Company,
+      },
+      {
+        name: "Cost Category",
+        component: CostCategory,
+      },
+      {
+        name: "Cost Center",
+        component: CostCenter,
+      },
+      {
+        name: "Currency",
+        component: Currency,
+      },
+      {
+        name: "Group",
+        component: Group,
+      },
+      {
+        name: "Ledger",
+        component: Ledger,
+      },
+      {
+        name: "Stock Category",
+        component: StockCategory,
+      },
+      {
+        name: "Stock Godown",
+        component: StockGodown,
+      },
+      {
+        name: "Stock Group",
+        component: StockGroup,
+      },
+      {
+        name: "Stock Item",
+        component: StockItem,
+      },
+      {
+        name: "Stock Unit",
+        component: StockUnit,
+      },
+      {
+        name: "Voucher Type",
+        component: VoucherType,
+      },
+      {
+        name: "Transactions",
+        component: Transaction,
+      },
+    ],
+  },
+  {
+    name: "Reports",
+    type: "parent",
+    icon: AiFillDashboard,
+    children: [
+      {
+        name: "Statistics",
+        component: Statistics,
+      },
+      {
+        name: "Sync Report",
+        component: SYnc,
+      },
+      {
+        name: "Purchase",
+        component: PurchaseTransaction,
+      },
+    ],
+  },
+  {
+    name: "Scheme",
+    type: "parent",
+    icon: AiFillDashboard,
+    children: [
+      {
+        name: "Target Scheme",
+        component: TargetScheme,
+      },
+      {
+        name: "Scheme Process",
+        component: SchemeProcess,
+      },
+    ],
+  },
 ];
 
 export default routes;
