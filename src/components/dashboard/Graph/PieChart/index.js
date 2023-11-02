@@ -11,7 +11,7 @@ export const data = [
 ];
 
 export const options = {
-  title: "My Daily Activities",
+  title: "",
   pieSliceText: "value-and-percentage", // This setting displays values and percentages horizontally
   pieSliceTextStyle: {
     fontSize: 12, // Adjust the font size of the data labels

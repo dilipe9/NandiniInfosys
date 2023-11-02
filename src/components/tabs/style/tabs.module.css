@@ -1,144 +1,146 @@
 .tabContainer {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .tabs {
-	position: relative;
-	border-radius: 5px;
-	padding-top: 1px;
-	height: 90%;
-	margin-top: 15px;
+  position: relative;
+  border-radius: 5px;
+  padding-top: 1px;
+  height: 90%;
+  margin-top: 15px;
 }
 
 .tabButtonRow {
-	display: flex;
-	position: relative;
-	width: 100%;
-	overflow-x: scroll;
-	font-weight: 500;
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  font-weight: 500;
 }
 .tabButtonRow::-webkit-scrollbar {
-	background-color: rgb(214, 214, 214);
-	height: 1rem;
+  background-color: rgb(214, 214, 214);
+  height: 1rem;
 }
 .tabButtonRow::-webkit-scrollbar-button {
-	background-color: var(--secondary-color);
-	width: 10px;
+  background-color: var(--secondary-color);
+  width: 10px;
 }
 .tabButtonRow::-webkit-scrollbar-thumb {
-	background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 .tabBox {
-	border-radius: 8px;
-	overflow-y: auto;
-	margin: 1rem;
-	border: 1px solid #dedede;
-	overflow: auto;
-	max-height: 100%;
+  border-radius: 8px;
+  overflow-y: auto;
+  margin: 1rem;
+  border: 1px solid #dedede;
+  /* overflow: auto; */
+  min-height: 30vh;
+  min-width: 96%;
+  max-height: 94%;
 }
 
 .scrollButton:first-of-type {
-	position: absolute;
-	left: 0;
-	background-color: var(--secondary-color);
-	height: 100%;
-	width: 2rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	font-weight: bold;
-	cursor: pointer;
-	z-index: 2;
+  position: absolute;
+  left: 0;
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2;
 }
 .scrollButton {
-	position: absolute;
-	right: 0;
-	background-color: var(--secondary-color);
-	height: 100%;
-	width: 2rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	font-weight: bold;
-	cursor: pointer;
-	z-index: 200;
+  position: absolute;
+  right: 0;
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 200;
 }
 .tabButton {
-	white-space: nowrap;
-	font-size: 0.8rem;
-	padding-inline: 1rem;
-	padding-block: 0.5rem;
-	cursor: pointer;
-	color: var(--primary-color);
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
-	background: linear-gradient(0deg, #bfbfbf 36%, white 80%);
-	border: none;
-	border-bottom: 1px solid transparent;
-	color: #616161;
-	z-index: 100;
-	border-radius: 5px 5px 0 0;
-	box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
-	margin: 0 2px;
-	padding: 7px 10px;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(0deg, #bfbfbf 36%, white 80%);
+  border: none;
+  border-bottom: 1px solid transparent;
+  color: #616161;
+  z-index: 100;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  margin: 0 2px;
+  padding: 7px 10px;
 }
 
 .closeButton {
-	font-size: 1.2rem;
-	margin-left: 8px;
-	width: 15px;
-	height: 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	right: 0;
-	line-height: 0;
-	overflow: hidden;
-	border-radius: 50%;
+  font-size: 1.2rem;
+  margin-left: 8px;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 0;
+  line-height: 0;
+  overflow: hidden;
+  border-radius: 50%;
 }
 .closeButton svg {
-	fill: var(--primary-color);
+  fill: var(--primary-color);
 }
 .tabBox::-webkit-scrollbar {
-	background-color: var(--secondary-color);
-	border-radius: 15px;
-	height: 0.5rem;
-	width: 0.5rem;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  height: 0.5rem;
+  width: 0.5rem;
 }
 .tabBox::-webkit-scrollbar-button {
-	display: none;
+  display: none;
 }
 .tabBox::-webkit-scrollbar-corner {
-	display: none;
+  display: none;
 }
 .tabBox::-webkit-scrollbar-thumb {
-	background-color: var(--primary-color);
-	border-radius: 15px;
+  background-color: var(--primary-color);
+  border-radius: 15px;
 }
 .activeTab {
-	z-index: 100;
+  z-index: 100;
 }
 .InactiveTab {
-	z-index: 1;
-	display: none;
+  z-index: 1;
+  display: none;
 }
 .active {
-	background: linear-gradient(0deg, #144075 36%, #16619f 80%);
-	color: #fff;
+  background: linear-gradient(0deg, #144075 36%, #16619f 80%);
+  color: #fff;
 }
 .active svg {
-	fill: #c4f862;
+  fill: #c4f862;
 }
 .inactive {
-	background-color: rgba(128, 128, 128, 0.118);
+  background-color: rgba(128, 128, 128, 0.118);
 }
