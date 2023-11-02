@@ -299,3 +299,61 @@ body {
 #SchemeProcessIcons > .actionIconRow {
   justify-content: left;
 }
+
+label.e-float-text,
+.e-float-input label.e-float-text,
+.e-float-input.e-control-wrapper label.e-float-text {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: #888585 !important;
+
+  /* color: #063e82 !important; */
+}
+
+.e-float-text.e-label-top {
+  -webkit-text-fill-color: #16619f;
+}
+
+input.e-disabled {
+  -webkit-text-fill-color: #000000 !important;
+}
+
+textarea.e-disabled {
+  -webkit-text-fill-color: #000000 !important;
+}
+
+.e-control input {
+  font-size: 12px !important;
+  font-family: TTNorms-Regular !important;
+  color: #000000 !important;
+  font-weight: 400 !important;
+}
+
+.e-outline.e-input-group.e-control-wrapper,
+.e-outline.e-input-group,
+.e-outline.e-input-group:not(.e-float-icon-left),
+.e-outline.e-float-input,
+.e-outline.e-float-input.e-control-wrapper,
+.e-outline.e-input-group:not(.e-float-icon-left),
+.e-outline.e-input-group.e-success:not(.e-float-icon-left),
+.e-outline.e-input-group.e-warning:not(.e-float-icon-left),
+.e-outline.e-input-group.e-error:not(.e-float-icon-left),
+.e-outline.e-input-group.e-control-wrapper:not(.e-float-icon-left),
+.e-outline.e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left),
+.e-outline.e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left),
+.e-outline.e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left) {
+  border-radius: 6px !important;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.e-outline.e-input-group input.e-input,
+.e-outline.e-float-input.e-input-group input,
+.e-outline.e-input-group.e-control-wrapper input.e-input,
+.e-outline.e-float-input.e-input-group.e-control-wrapper input,
+.e-outline.e-float-input input,
+.e-outline.e-float-input.e-control-wrapper input {
+  border-radius: 6px !important;
+}
+
+.main_content_wrapper {
+  padding: 20px;
+}

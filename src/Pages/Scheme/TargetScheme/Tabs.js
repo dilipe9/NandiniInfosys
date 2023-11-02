@@ -20,7 +20,7 @@ export const TargetSchemeTabs = () => {
         md={12}
         sm={12}
         xs={12}
-        style={{ marginBottom: "0px" }}
+        style={{ marginBottom: "0px", marginTop: "10px" }}
       >
         <TabComponent selected={(args) => setSelectedTab(args.selectedIndex)}>
           <TabItemsDirective>

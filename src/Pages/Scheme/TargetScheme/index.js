@@ -16,7 +16,7 @@ const TargetScheme = () => {
     reject: false,
   });
   return (
-    <div className="style_mainContainer__JOE3H">
+    <div className="main_content_wrapper">
       <ActionIcons
         add={true}
         addState={actionStates.add}
