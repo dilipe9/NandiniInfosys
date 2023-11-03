@@ -135,6 +135,10 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+img,
+svg {
+  vertical-align: unset !important;
+}
 .logoHeader {
   position: absolute;
   top: 0;

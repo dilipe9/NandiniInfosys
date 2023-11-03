@@ -39,6 +39,21 @@ import PurchaseTransaction from "../Pages/Reports/Purchase";
 import TargetScheme from "../Pages/Scheme/TargetScheme";
 import SchemeProcess from "../Pages/Scheme/SchemeProcess";
 
+// Tally Master
+import TallyCompany from "../Pages/TallyMaster/Company";
+import TallyCostCategory from "../Pages/TallyMaster/CostCategory";
+import TallyCostCenter from "../Pages/TallyMaster/CostCenter";
+import TallyCurrency from "../Pages/TallyMaster/Currency";
+import TallyGroup from "../Pages/TallyMaster/Group";
+import TallyLedger from "../Pages/TallyMaster/Ledger";
+import TallyStockCategory from "../Pages/TallyMaster/StockCategory";
+import TallyStockGodown from "../Pages/TallyMaster/StockGodown";
+import TallyStockGroup from "../Pages/TallyMaster/StockGroup";
+import TallyStockItem from "../Pages/TallyMaster/StockItem";
+import TallyStockUnit from "../Pages/TallyMaster/StockUnit";
+import TallyTransactions from "../Pages/TallyMaster/Transactions";
+import TallyVoucherType from "../Pages/TallyMaster/VoucherType";
+
 const routes = [
   {
     path: "/postlogin/dashboard",
@@ -191,6 +206,65 @@ const routes = [
       {
         name: "Scheme Process",
         component: SchemeProcess,
+      },
+    ],
+  },
+  {
+    name: "Tally Master",
+    type: "parent",
+    icon: AiFillDashboard,
+    children: [
+      {
+        name: "Company",
+        component: TallyCompany,
+      },
+      {
+        name: "Cost Category",
+        component: TallyCostCategory,
+      },
+      {
+        name: "Cost Center",
+        component: TallyCostCenter,
+      },
+      {
+        name: "Currency",
+        component: TallyCurrency,
+      },
+      {
+        name: "Group",
+        component: TallyGroup,
+      },
+      {
+        name: "Ledger",
+        component: TallyLedger,
+      },
+      {
+        name: "Stock Category",
+        component: TallyStockCategory,
+      },
+      {
+        name: "Stock Godown",
+        component: TallyStockGodown,
+      },
+      {
+        name: "Stock Group",
+        component: TallyStockGroup,
+      },
+      {
+        name: "Stock Item",
+        component: TallyStockItem,
+      },
+      {
+        name: "Stock Unit",
+        component: TallyStockUnit,
+      },
+      {
+        name: "Voucher Type",
+        component: TallyVoucherType,
+      },
+      {
+        name: "Transactions",
+        component: TallyTransactions,
       },
     ],
   },

@@ -241,11 +241,11 @@ export default function Table({
   ];
   const toolbar = ["Search", "ColumnChooser", "ExcelExport", "CSV Export"];
   const handleCSVImport = (args) => {
-    console.log(args.item.text);
     if (args.item.text === "Excel Export") {
       const excelExportProperties = {
         fileName: `${name}.xlsx`,
       };
+
       gridInstance.current.excelExport(excelExportProperties);
     } else if (args.item.text === "CSV Export") {
       const excelExportProperties = {
