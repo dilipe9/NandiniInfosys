@@ -73,7 +73,7 @@ export const fieldsMap = {
     },
     {
       field: "RemoteCmpPincode",
-      headerText: "]Pincode",
+      headerText: "Pincode",
       width: "150",
       visible: true,
     },
@@ -145,7 +145,7 @@ export const fieldsMap = {
     { field: "Name", headerText: "Name", width: "100", visible: true },
     {
       field: "CreatedDate",
-      headerText: "Uploaded ON",
+      headerText: "Uploaded On",
       width: "170",
       visible: true,
     },
@@ -620,7 +620,7 @@ export const fieldsMap = {
       width: "150",
       visible: true,
     },
-    { field: "Date", headerText: "Date", width: "100", visible: true },
+    { field: "Date", headerText: "Date", width: "140", visible: true },
 
     {
       field: "Narration",
@@ -651,12 +651,6 @@ export const fieldsMap = {
     { field: "Status", headerText: "Status", width: "130", visible: true },
   ],
   ledger: [
-    {
-      field: "ParentName",
-      headerText: "Parent",
-      width: "160",
-      visible: true,
-    },
     {
       field: "CompanyName",
       headerText: "Company",
