@@ -14,11 +14,10 @@ import {
   DropDownComponent,
   DateRangePicker,
   MultipleSelectComponent,
-  NumericTextBoxComponent,
+  CheckboxComponent,
   DatePicker,
 } from "../../../common";
 import TextArea from "../../../common/TextArea";
-import CheckBox from "../../../components/checkbox/Checkbox";
 
 function TallyCompanyForm() {
   return (
@@ -275,8 +274,8 @@ function TallyCompanyForm() {
           />
         </Col>
 
-        <Col xl={3} lg={3} md={4} sm={6} xs={12}>
-          <Label check className="checkboxlabel">
+        <Col xl={1} lg={2} md={3} sm={4} xs={6}>
+          {/* <Label check className="checkboxlabel">
             <Input
               type="radio"
               // checked={parentSchemeChecked}
@@ -285,7 +284,13 @@ function TallyCompanyForm() {
               // disabled={!formEditable}
             />{" "}
             Status
-          </Label>
+          </Label> */}
+          <CheckboxComponent
+            // name={"shankar"}
+            // checked={false}
+            label={"Status"}
+            // handleCheckbox={(e) => console.log(e)}
+          />
         </Col>
       </Row>
       <Row>
