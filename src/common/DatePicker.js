@@ -17,11 +17,13 @@ export const DatePicker = ({
   showClearButton,
   openOnFocus,
   enabled,
-  error
+  error,
 }) => {
-  let date_format = (dateFormat && (dateFormat != '')) ? dateFormat : 'dd-MMM-yyyy';
+  let date_format = dateFormat && dateFormat != "" ? dateFormat : "dd-MM-yyyy";
+
   return (
-    <>
+    <div className={"ristrict_height"}>
+      {placeholder && <span className={"input_label_form"}>{placeholder}</span>}
       <DatePickerComponent
         id={dateId}
         name={dateName}
@@ -32,15 +34,15 @@ export const DatePicker = ({
         allowEdit={alloowEdit}
         calendarMode={calendarMode}
         format={date_format}
-        floatLabelType="Auto"
+        floatLabelType="Never"
         placeholder={placeholder}
         cssClass={cssClass}
         onChange={handleDateChange}
-        openOnFocus={openOnFocus}
+        // openOnFocus={openOnFocus}
         showClearButton={showClearButton}
         enabled={enabled}
       />
       {error && <span className="validation-error-msg">{error}</span>}
-    </>
+    </div>
   );
 };

@@ -12,6 +12,17 @@ class TextBoxCompnonents extends React.Component {
       this.props.keyPressMethod
     );
   };
+  handleOnFocus = (args) => {
+    if (args) {
+      args.target.classList.add("shadow_for_inputbox");
+    }
+  };
+
+  handleOnBlur = (args) => {
+    if (args) {
+      args.target.classList.remove("shadow_for_inputbox");
+    }
+  };
 
   render() {
     const {
@@ -40,7 +51,10 @@ class TextBoxCompnonents extends React.Component {
     }
 
     return (
-      <div style={{ width: "100%" }}>
+      <div className={"ristrict_height"} style={{ width: "100%" }}>
+        {placeholder && (
+          <span className={"input_label_form"}>{placeholder}</span>
+        )}
         <TextBoxComponent
           name={name}
           id={id}
@@ -50,6 +64,8 @@ class TextBoxCompnonents extends React.Component {
           floatLabelType={floatLabelType}
           value={value}
           onChange={onChange}
+          onFocus={this.handleOnFocus}
+          onBlur={this.handleOnBlur}
           readOnly={readOnly}
           enabled={enabled}
           ref={(scope) => {

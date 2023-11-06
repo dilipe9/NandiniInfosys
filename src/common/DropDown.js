@@ -20,10 +20,11 @@ export const DropDownComponent = ({
   style,
   cssClass,
   enabled,
-  allowFiltering
+  allowFiltering,
 }) => {
   return (
-    <>
+    <div className={"ristrict_height"}>
+      {placeholder && <span className={"input_label_form"}>{placeholder}</span>}
       <DropDownListComponent
         id={itemId}
         name={itemname}
@@ -32,7 +33,7 @@ export const DropDownComponent = ({
         dataSource={dataSources}
         fields={fields}
         filterBarPlaceholder={filterPlaceholder}
-        showDropDownIcon={showDropDownIcon}
+        showDropDownIcon={false}
         popupHeight={popupHeight}
         change={handleChange}
         placeholder={placeholder}
@@ -42,10 +43,10 @@ export const DropDownComponent = ({
         text={text}
         style={style}
         cssClass={cssClass}
-        floatLabelType="Auto"
+        floatLabelType="Never"
         allowFiltering={allowFiltering}
       />
       {error && <span className="validation-error-msg">{error}</span>}
-    </>
+    </div>
   );
 };

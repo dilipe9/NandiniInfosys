@@ -3,8 +3,9 @@ import { TextBoxComponent } from "@syncfusion/ej2-react-inputs";
 
 class TextArea extends React.Component {
   constructor(props) {
-    super(props); 
+    super(props);
   }
+
   render() {
     const {
       placeholder,
@@ -19,11 +20,12 @@ class TextArea extends React.Component {
       readOnly,
       enabled,
       multiline,
-      maxlength
+      maxlength,
     } = this.props;
-    let maxChar = (maxlength > 0) ? maxlength : 500;
-    if(this.TextAreaInstance){
-        this.TextAreaInstance && this.TextAreaInstance.addAttributes({maxlength: maxChar});
+    let maxChar = maxlength > 0 ? maxlength : 500;
+    if (this.TextAreaInstance) {
+      this.TextAreaInstance &&
+        this.TextAreaInstance.addAttributes({ maxlength: maxChar });
     }
     return (
       <>
@@ -40,7 +42,9 @@ class TextArea extends React.Component {
           enabled={enabled}
           multiline={multiline}
           maxlength={maxChar}
-          ref={(scope)=>{this.TextAreaInstance=scope}}
+          ref={(scope) => {
+            this.TextAreaInstance = scope;
+          }}
         />
         {error && <span className="validation-error-msg">{error}</span>}
       </>

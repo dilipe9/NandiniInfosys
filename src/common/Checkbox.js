@@ -13,7 +13,7 @@ export const CheckboxComponent = ({
         border:
           checked === true
             ? "1px solid rgb(22 94 155)"
-            : "1px solid rgba(0, 0, 0, 0.24)",
+            : " rgba(0, 0, 0, 0.24)",
       }}
     >
       <div class="checkbox-wrapper-65">

@@ -29,8 +29,8 @@ function TallyCompanyForm() {
             id="comapanyName"
             type="text"
             placeholder="Name"
-            cssClass="e-outline"
-            floatLabelType="Auto"
+            cssClass="custome-textboxCss"
+            floatLabelType="Never"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
             // error={fields.schemeCode.error}
@@ -44,15 +44,19 @@ function TallyCompanyForm() {
             itemname="calculatedOn"
             itemId="calculatedOn"
             keyValue="calculatedOn"
-            // dataSources={calculatedOnList}
+            dataSources={[
+              { text: "ncujbds", value: "bhjcdvs" },
+              { text: "hvcghv", value: "sfdskfbdh" },
+              { text: "njdhvfghsv", value: "tuego" },
+            ]}
             // componentRef={calculatedonInstance}
-            fields={{ text: "option", value: "optionid" }}
-            filterBarPlaceholder="Country*"
-            showDropDownIcon={true}
+            fields={{ text: "text", value: "value" }}
+            // filterBarPlaceholder="Country*"
+            showDropDownIcon={false}
             popupHeight="185px"
             placeholder="Country"
             text={true}
-            cssClass="e-outline"
+            cssClass="dropDown_css"
             // enabled={formEditable}
             // handleChange={handleChange}
             allowFiltering={true}
@@ -72,7 +76,6 @@ function TallyCompanyForm() {
             popupHeight="185px"
             placeholder="State*"
             text={true}
-            cssClass="e-outline"
             // enabled={formEditable}
             // handleChange={handleChange}
             allowFiltering={true}
@@ -86,8 +89,8 @@ function TallyCompanyForm() {
             id="comapanyName"
             type="text"
             placeholder="Pincode"
-            cssClass="e-outline"
-            floatLabelType="Auto"
+            cssClass="custome-textboxCss"
+            floatLabelType="Never"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
             // error={fields.schemeCode.error}
@@ -103,8 +106,8 @@ function TallyCompanyForm() {
             id="comapanyName"
             type="text"
             placeholder="Email"
-            cssClass="e-outline"
-            floatLabelType="Auto"
+            cssClass="custome-textboxCss"
+            floatLabelType="Never"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
             // error={fields.schemeCode.error}
@@ -118,8 +121,8 @@ function TallyCompanyForm() {
             id="comapanyName"
             type="text"
             placeholder="Currency"
-            cssClass="e-outline"
-            floatLabelType="Auto"
+            cssClass="custome-textboxCss"
+            floatLabelType="Never"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
             // error={fields.schemeCode.error}
@@ -136,13 +139,11 @@ function TallyCompanyForm() {
             // minDate,
             // maxDate,
             // alloowEdit,
-            // calendarMode,
+
             // dateFormat,
             // handleDateChange,
             placeholder={"Book Start Date"}
-            cssClass={"e-outline"}
             showClearButton={true}
-            openOnFocus={true}
             enabled={true}
             // erro
           />
@@ -154,8 +155,8 @@ function TallyCompanyForm() {
             id="comapanyName"
             type="text"
             placeholder="GST No."
-            cssClass="e-outline"
-            floatLabelType="Auto"
+            cssClass="custome-textboxCss"
+            floatLabelType="Never"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
             // error={fields.schemeCode.error}
@@ -171,8 +172,8 @@ function TallyCompanyForm() {
             id="comapanyName"
             type="text"
             placeholder="CIN No."
-            cssClass="e-outline"
-            floatLabelType="Auto"
+            cssClass="custome-textboxCss"
+            floatLabelType="Never"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
             // error={fields.schemeCode.error}
@@ -186,8 +187,8 @@ function TallyCompanyForm() {
             id="comapanyName"
             type="text"
             placeholder="Pan No."
-            cssClass="e-outline"
-            floatLabelType="Auto"
+            cssClass="custome-textboxCss"
+            floatLabelType="Never"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
             // error={fields.schemeCode.error}
@@ -201,8 +202,8 @@ function TallyCompanyForm() {
             id="comapanyName"
             type="text"
             placeholder="Attribute 1"
-            cssClass="e-outline"
-            floatLabelType="Auto"
+            cssClass="custome-textboxCss"
+            floatLabelType="Never"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
             // error={fields.schemeCode.error}
@@ -217,8 +218,8 @@ function TallyCompanyForm() {
             id="comapanyName"
             type="text"
             placeholder="Attribute 2"
-            cssClass="e-outline"
-            floatLabelType="Auto"
+            cssClass="custome-textboxCss"
+            floatLabelType="Never"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
             // error={fields.schemeCode.error}
@@ -234,8 +235,8 @@ function TallyCompanyForm() {
             id="comapanyName"
             type="text"
             placeholder="Attribute 3"
-            cssClass="e-outline"
-            floatLabelType="Auto"
+            cssClass="custome-textboxCss"
+            floatLabelType="Never"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
             // error={fields.schemeCode.error}
@@ -249,8 +250,8 @@ function TallyCompanyForm() {
             id="comapanyName"
             type="text"
             placeholder="Attribute 4"
-            cssClass="e-outline"
-            floatLabelType="Auto"
+            cssClass="custome-textboxCss"
+            floatLabelType="Never"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
             // error={fields.schemeCode.error}
@@ -264,8 +265,8 @@ function TallyCompanyForm() {
             id="comapanyName"
             type="text"
             placeholder="Attribute 5"
-            cssClass="e-outline"
-            floatLabelType="Auto"
+            cssClass="custome-textboxCss"
+            floatLabelType="Never"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
             // error={fields.schemeCode.error}
@@ -274,7 +275,7 @@ function TallyCompanyForm() {
           />
         </Col>
 
-        <Col xl={1} lg={2} md={3} sm={4} xs={6}>
+        <Col xl={1} lg={2} md={3} sm={4} xs={6} style={{ marginTop: "1.5rem" }}>
           {/* <Label check className="checkboxlabel">
             <Input
               type="radio"
@@ -299,8 +300,8 @@ function TallyCompanyForm() {
             name="remark"
             type="textarea"
             placeholder="Address"
-            cssClass="e-outline h-100"
-            floatLabelType="Auto"
+            cssClass="h-100"
+            floatLabelType="Never"
             // value={fields.remark.value}
             // onChange={handleChange}
             // enabled={formEditable}
