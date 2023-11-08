@@ -60,8 +60,8 @@ class TextBoxCompnonents extends React.Component {
           id={id}
           type={type}
           placeholder={placeholder}
-          cssClass={cssClass}
-          floatLabelType={floatLabelType}
+          cssClass={"custome-textboxCss"}
+          floatLabelType={"Never"}
           value={value}
           onChange={onChange}
           onFocus={this.handleOnFocus}

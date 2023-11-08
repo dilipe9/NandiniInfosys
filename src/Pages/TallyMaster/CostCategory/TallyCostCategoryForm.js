@@ -56,7 +56,6 @@ function TallyCostCategoryForm() {
             // dateFormat,
             // handleDateChange,
             placeholder={"Uploaded On"}
-            cssClass={"e-outline"}
             showClearButton={true}
             openOnFocus={true}
             enabled={true}

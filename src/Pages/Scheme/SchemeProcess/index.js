@@ -4,7 +4,9 @@ import { SchemeProcessForm } from "./SchemeProcessForm";
 const SchemeProcess = () => {
   return (
     <div className="main_content_wrapper">
-      <SchemeProcessForm />
+      <div className="main_content_padding">
+        <SchemeProcessForm />
+      </div>
     </div>
   );
 };

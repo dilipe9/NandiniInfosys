@@ -17,7 +17,9 @@ export default function VoucherType() {
   let functions = { handleOnChange, handleSubmit };
   return (
     <>
-      <FormGenerator formData={formData} functions={functions} />
+      <div className="main_content_wrapper">
+        <FormGenerator formData={formData} functions={functions} />
+      </div>
     </>
   );
 }

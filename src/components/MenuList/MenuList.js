@@ -4,12 +4,13 @@ import { BsFillCaretDownFill } from "react-icons/bs";
 import { BsFillCaretUpFill } from "react-icons/bs";
 import { LayoutContext } from "../../store/store";
 
-export default function MenuList({ route, routeIndex }) {
+export default function MenuList({ route, routeIndex, checking }) {
   const { activateTab, activeTab } = useContext(LayoutContext);
   useEffect(() => {}, [activeTab]);
   const [expand, setExpand] = useState(false);
 
   function changeTab(child) {
+    checking(child);
     activateTab(child, true);
   }
 

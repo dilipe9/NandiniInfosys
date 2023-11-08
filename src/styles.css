@@ -213,11 +213,14 @@ svg {
   min-width: 15rem;
 }
 .actionIconRow {
-  justify-content: right;
+  justify-content: left;
   padding: 0px !important;
   align-items: center;
   text-align: end;
   padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  position: absolute;
+  transition: left 0.3s ease-in-out;
 }
 .actionIconContainer {
   margin-top: 10px;
@@ -278,7 +281,7 @@ svg {
 .e-tab .e-tab-header .e-toolbar-item .e-tab-wrap {
   border-radius: 7px;
   background-color: #dedede;
-  margin: 5px;
+  margin: 5px 5px 0px 5px;
 }
 .e-tab .e-tab-header .e-toolbar-item .e-tab-wrap:hover .e-tab-text {
   color: #dedede;
@@ -296,7 +299,7 @@ svg {
   margin-left: 5px;
   font-size: 25px !important;
   margin-top: 1px;
-  height: 39px;
+  height: 35px;
   background: #16619f !important;
   border: none !important;
 }
@@ -357,10 +360,6 @@ textarea.e-disabled {
 .e-outline.e-float-input.e-control-wrapper input {
   border-radius: 6px !important;
 } */
-
-.main_content_wrapper {
-  padding: 20px;
-}
 
 .checkbox-wrapper-65 .cbx {
   top: 4px;
@@ -654,4 +653,49 @@ textarea.e-disabled {
 
 .h-100 {
   min-height: 80px !important;
+}
+
+.tabsContainer_css {
+  margin: 1rem 1rem 1rem;
+
+  /* max-height: ; */
+}
+
+.main_content_wrapper {
+  border: 1px solid #dedede;
+  border-top-left-radius: 0px !important;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  /* margin: 1rem; */
+  min-height: 30vh;
+  min-width: 96%;
+  max-height: 94%;
+  background-color: (--bs-body-bg);
+  /* padding: 20px; */
+}
+
+.main_content_padding {
+  padding: 10px 20px 20px 20px !important;
+}
+
+.e-tab .e-tab-header:not(.e-vertical) .e-indicator {
+  bottom: -2px !important;
+}
+
+.bottom-border_Actions {
+  margin-top: 20px;
+  border-bottom: 1px solid black;
+}
+
+.sliding-div {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  position: relative;
+  animation-name: slideRight;
+  animation-duration: 3s; /* Adjust the duration as needed */
+  animation-timing-function: linear;
+  animation-iteration-count: 1; /* Play the animation only once */
 }

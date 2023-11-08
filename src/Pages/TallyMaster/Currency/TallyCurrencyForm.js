@@ -86,24 +86,24 @@ function TallyCurrencyForm() {
           />
         </Col>
         <Col xl={3} lg={3} md={4} sm={6} xs={12}>
-          <NumericTextBoxComponent
+          <TextBoxCompnonents
             name="Decimal Places"
             id="decimaPlaces"
             type="number"
             placeholder="Decimal Places*"
             cssClass="e-outline"
             floatLabelType="Auto"
-          ></NumericTextBoxComponent>
+          ></TextBoxCompnonents>
         </Col>
         <Col xl={3} lg={3} md={4} sm={6} xs={12}>
-          <NumericTextBoxComponent
+          <TextBoxCompnonents
             name="Decimal Places Print"
             id="decimaPlacesPrint "
             type="number"
             placeholder="Decimal Places Print*"
             cssClass="e-outline"
             floatLabelType="Auto"
-          ></NumericTextBoxComponent>
+          ></TextBoxCompnonents>
         </Col>
       </Row>
       <Row>

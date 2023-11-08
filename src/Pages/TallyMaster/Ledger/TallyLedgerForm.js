@@ -29,7 +29,6 @@ export const TallyLedgerForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Company"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -44,7 +43,6 @@ export const TallyLedgerForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Name"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -67,7 +65,6 @@ export const TallyLedgerForm = () => {
             popupHeight="185px"
             placeholder="Parent"
             text={true}
-            cssClass="e-outline"
             // enabled={formEditable}
             // handleChange={handleChange}
             allowFiltering={true}
@@ -80,7 +77,6 @@ export const TallyLedgerForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Mailing Name"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -105,7 +101,6 @@ export const TallyLedgerForm = () => {
             popupHeight="185px"
             placeholder="Country"
             text={true}
-            cssClass="e-outline"
             // enabled={formEditable}
             // handleChange={handleChange}
             allowFiltering={true}
@@ -125,7 +120,6 @@ export const TallyLedgerForm = () => {
             popupHeight="185px"
             placeholder="State*"
             text={true}
-            cssClass="e-outline"
             // enabled={formEditable}
             // handleChange={handleChange}
             allowFiltering={true}
@@ -139,7 +133,6 @@ export const TallyLedgerForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Pincode"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -154,7 +147,6 @@ export const TallyLedgerForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Contact Person"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -171,7 +163,6 @@ export const TallyLedgerForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Mobile"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -186,7 +177,6 @@ export const TallyLedgerForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Phone"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -201,7 +191,6 @@ export const TallyLedgerForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Email Id"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -216,7 +205,6 @@ export const TallyLedgerForm = () => {
             id="comapanyName"
             type="text"
             placeholder="CC Email Id"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -233,7 +221,6 @@ export const TallyLedgerForm = () => {
             id="comapanyName"
             type="text"
             placeholder="PAN No."
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -248,7 +235,6 @@ export const TallyLedgerForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Reg. Type"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -263,7 +249,6 @@ export const TallyLedgerForm = () => {
             id="comapanyName"
             type="text"
             placeholder="GST No."
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -278,7 +263,6 @@ export const TallyLedgerForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Opening Balance"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}

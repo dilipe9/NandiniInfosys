@@ -1,6 +1,6 @@
 export default function HRDashboard() {
   return (
-    <div>
+    <div className="main_content_wrapper">
       <iframe
         width="100%"
         height="541.25"

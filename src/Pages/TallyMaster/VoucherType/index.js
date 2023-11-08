@@ -5,17 +5,19 @@ import { ActionIcons } from "../../../components/ActionIcon";
 const TallyVoucherType = () => {
   return (
     <div className="main_content_wrapper">
-      <ActionIcons
-        edit={true}
-        editState={true}
-        save={true}
-        saveState={false}
-        reset={true}
-        resetState={false}
-        add={true}
-        addState={true}
-      />
-      <TallyVoucherTypeForm />
+      <div className="main_content_padding">
+        <ActionIcons
+          edit={true}
+          editState={true}
+          save={true}
+          saveState={false}
+          reset={true}
+          resetState={false}
+          add={true}
+          addState={true}
+        />
+        <TallyVoucherTypeForm />
+      </div>
     </div>
   );
 };

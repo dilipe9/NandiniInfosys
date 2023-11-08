@@ -27,7 +27,6 @@ export const TargetSchemeForm = () => {
             id="schemeCode"
             type="text"
             placeholder="Scheme Code*"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -42,7 +41,6 @@ export const TargetSchemeForm = () => {
             id="schemeName"
             type="text"
             placeholder="Scheme Name*"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeName.value}
@@ -62,7 +60,6 @@ export const TargetSchemeForm = () => {
             calendarMode="Gregorian"
             date_format="dd-MMM-yyyy"
             placeholder="Select Scheme Period*"
-            cssClass="e-outline"
             // onChange={handleChange}
             openOnFocus={true}
             showClearButton={false}
@@ -84,7 +81,6 @@ export const TargetSchemeForm = () => {
             popupHeight="185px"
             placeholder="Calculated On*"
             text={true}
-            cssClass="e-outline"
             // enabled={formEditable}
             // handleChange={handleChange}
             allowFiltering={true}
@@ -104,7 +100,6 @@ export const TargetSchemeForm = () => {
             popupHeight="185px"
             placeholder="Qualifying Criteria*"
             text={true}
-            cssClass="e-outline"
             // enabled={formEditable}
             // handleChange={handleChange}
             allowFiltering={true}
@@ -124,7 +119,6 @@ export const TargetSchemeForm = () => {
             popupHeight="185px"
             placeholder="Incentive Type*"
             text={true}
-            cssClass="e-outline"
             // enabled={formEditable}
             // handleChange={handleChange}
             allowFiltering={true}
@@ -168,7 +162,6 @@ export const TargetSchemeForm = () => {
             popupHeight="185px"
             placeholder="Parent Scheme"
             text={true}
-            cssClass="e-outline"
             // enabled={childSchemeChecked}
             // handleChange={handleChange}
             allowFiltering={true}
@@ -191,7 +184,6 @@ export const TargetSchemeForm = () => {
             popupHeight="185px"
             placeholder="Link With Parent"
             text={true}
-            cssClass="e-outline"
             // enabled={childSchemeChecked}
             // handleChange={handleChange}
             allowFiltering={true}
@@ -211,7 +203,7 @@ export const TargetSchemeForm = () => {
           popupHeight="185px"
           placeholder="Billing Type*"
           text={true}
-          cssClass="e-outline"
+          
           enabled={formEditable}
           handleChange={handleChange}
           allowFiltering={true}
@@ -232,7 +224,6 @@ export const TargetSchemeForm = () => {
             popupHeight="350px"
             // handleChange={handleBillingTypeChange}
             // enabled={formEditable}
-            cssClass="e-outline"
           />
         </Col>
         <Col xl={3} lg={3} md={6} sm={6} xs={12}>
@@ -251,7 +242,6 @@ export const TargetSchemeForm = () => {
             popupHeight="185px"
             placeholder="Group Consolidation*"
             text={true}
-            cssClass="e-outline"
             // enabled={formEditable}
             // handleChange={handleChange}
             allowFiltering={true}
@@ -270,7 +260,6 @@ export const TargetSchemeForm = () => {
             calendarMode="Gregorian"
             date_format="dd-MMM-yyyy"
             placeholder="Select Growth Period"
-            cssClass="e-outline"
             // onChange={handleChange}
             openOnFocus={true}
             showClearButton={false}

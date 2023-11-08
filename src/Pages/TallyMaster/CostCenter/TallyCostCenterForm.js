@@ -72,7 +72,6 @@ function TallyCostCenterForm() {
             // dateFormat,
             // handleDateChange,
             placeholder={"Book Start Date"}
-            cssClass={"e-outline"}
             showClearButton={true}
             openOnFocus={true}
             enabled={true}

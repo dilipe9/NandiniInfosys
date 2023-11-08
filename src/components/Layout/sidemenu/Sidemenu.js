@@ -6,7 +6,7 @@ import { LayoutContext } from "../../../store/store";
 
 import MenuList from "../../MenuList/MenuList";
 
-export default function SideMenu() {
+export default function SideMenu({ checking }) {
   const { activeTab, activateTab } = useContext(LayoutContext);
 
   useEffect(() => {
@@ -14,6 +14,7 @@ export default function SideMenu() {
   }, []);
 
   function changeTab(child) {
+    checking(child);
     activateTab(child, true);
   }
 
@@ -31,6 +32,7 @@ export default function SideMenu() {
                 route={route}
                 routeIndex={routeIndex}
                 key={`menu_accordial${routeIndex}`}
+                checking={checking}
               />
             ) : (
               <ul className={`${styles.ulHeader}`} key={`rounte${routeIndex}`}>

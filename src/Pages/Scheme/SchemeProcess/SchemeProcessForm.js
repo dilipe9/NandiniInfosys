@@ -38,15 +38,8 @@ export const SchemeProcessForm = (
 ) => {
   return (
     <>
-      <Row>
-        <Col
-          xl={3}
-          lg={3}
-          md={6}
-          sm={12}
-          xs={12}
-          className="d-flex textBoxWithActionBtnContainer"
-        >
+      <Row style={{ marginTop: "1rem" }}>
+        <Col xl={3} lg={3} md={6} sm={12} xs={12} className="d-flex ">
           <div className="w-100">
             <TextBoxCompnonents
               name="schemeCode"
@@ -64,6 +57,7 @@ export const SchemeProcessForm = (
 
           <Button
             className="getListButtonRightArrow"
+            style={{ marginTop: "1rem" }}
             // onClick={openSchemeListPopup}
             // style={{ display: showSchemeSelectBtn ? "block" : "none" }}
           >
@@ -85,14 +79,14 @@ export const SchemeProcessForm = (
           ></TextBoxCompnonents>
         </Col>
         <Col xl={3} lg={3} md={6} sm={12} xs={12} id="SchemeProcessIcons">
-          <ActionIcons
+          {/* <ActionIcons
             process={true}
             processState={true}
             // processAction={processAction}
             view={true}
             viewState={true}
             // viewAction={viewAction}
-          />
+          /> */}
         </Col>
       </Row>
       {/* {scheme_id > 0 ? ( */}

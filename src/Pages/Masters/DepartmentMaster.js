@@ -74,7 +74,9 @@ export default function DepartmentMaster() {
   let functions = { handleOnChange, handleSubmit, handleReset, handleEdit };
   return (
     <>
-      <FormGenerator formData={formData} functions={functions} />
+      <div className="main_content_wrapper">
+        <FormGenerator formData={formData} functions={functions} />
+      </div>
     </>
   );
 }

@@ -29,7 +29,6 @@ export const TallyVoucherTypeForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Company"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -44,7 +43,6 @@ export const TallyVoucherTypeForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Name"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -59,7 +57,6 @@ export const TallyVoucherTypeForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Reserved Name"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -82,7 +79,6 @@ export const TallyVoucherTypeForm = () => {
             popupHeight="185px"
             placeholder="Parent"
             text={true}
-            cssClass="e-outline"
             // enabled={formEditable}
             // handleChange={handleChange}
             allowFiltering={true}

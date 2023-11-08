@@ -218,186 +218,188 @@ const PurchaseTransaction = () => {
 
   return (
     <>
-      <div className={"form_form__purchaseTransaction"}>
-        <InputRow key={"purchaseTransactionInputRow"} align="left" col={1}>
-          <div className="selectContainerCss">
-            <span
-              className={"purchaseTransactionLabel"}
-              key={`span_purchaseTransactionLabel`}
-            >
-              {"Period"}
-            </span>
-            <select
-              className="select_period_purchaseTransactionCss"
-              value={formDetails.selectedPeriod}
-              onChange={handleOnChange}
-            >
-              <option
-                key={`default_period_purchaseTransactionCss`}
-                value={-1}
-                styles={{ "text-align": "center" }}
+      <div className="main_content_wrapper">
+        <div className={"form_form__purchaseTransaction"}>
+          <InputRow key={"purchaseTransactionInputRow"} align="left" col={1}>
+            <div className="selectContainerCss">
+              <span
+                className={"purchaseTransactionLabel"}
+                key={`span_purchaseTransactionLabel`}
               >
-                --{"Select Period"}--
-              </option>
-              {periodData?.length > 0 &&
-                periodData.map((val, index) => (
-                  <option key={index} value={val.periodid}>
-                    {val.periodname}
-                  </option>
-                ))}
-            </select>
-          </div>
-          <Input
-            key={`date_from_date_purchaseTransaction`}
-            type={"date"}
-            label={"From Date"}
-            name={"fromDate"}
-            enabled={formDetails.selectedPeriod == 10 ? true : false}
-            value={formDetails.fromDate}
-            onChange={handleChange}
-          />
-          <Input
-            key={`date_to_date_purchaseTransaction`}
-            type={"date"}
-            label={"Date To"}
-            name={"toDate"}
-            enabled={formDetails.selectedPeriod == 10 ? true : false}
-            value={formDetails.toDate}
-            onChange={handleChange}
-          />
-          {isLoading ? null : (
-            <Button
-              visible={formDetails.selectedPeriod == 10 ? showRefresh : false}
-              name={"submit"}
-              key={"form_trabsaction"}
-              btnText={"Refresh"}
-              btnType={"button"}
-              // align={control.align}
-              onClick={handleSubmit}
+                {"Period"}
+              </span>
+              <select
+                className="select_period_purchaseTransactionCss"
+                value={formDetails.selectedPeriod}
+                onChange={handleOnChange}
+              >
+                <option
+                  key={`default_period_purchaseTransactionCss`}
+                  value={-1}
+                  styles={{ "text-align": "center" }}
+                >
+                  --{"Select Period"}--
+                </option>
+                {periodData?.length > 0 &&
+                  periodData.map((val, index) => (
+                    <option key={index} value={val.periodid}>
+                      {val.periodname}
+                    </option>
+                  ))}
+              </select>
+            </div>
+            <Input
+              key={`date_from_date_purchaseTransaction`}
+              type={"date"}
+              label={"From Date"}
+              name={"fromDate"}
+              enabled={formDetails.selectedPeriod == 10 ? true : false}
+              value={formDetails.fromDate}
+              onChange={handleChange}
             />
-          )}
-        </InputRow>
-        {isLoading ? (
-          <React.Fragment>Loading...</React.Fragment>
-        ) : (
-          <GridComponent
-            locale="en-Us"
-            id="Wgt_DelearUiGrid_id"
-            key="Wgt_DelearUiGrid_id"
-            allowTextWrap={true}
-            allowResizing={false}
-            dataSource={parentGridData}
-            height={"400px"}
-            ref={childGridInstance}
-            allowPaging={true}
-            allowSelection={true}
-            gridLines="Both"
-            rowHeight={25}
-            pageSettings={{ pageSize: 15, pageCount: 10 }}
-            allowFiltering={true}
-            filterSettings={{ type: "Excel" }}
-            allowExcelExport={true}
-            allowSorting={true}
-            childGrid={orderChildGridOptions}
-            detailDataBound={onLoad}
-          >
-            <ColumnsDirective>
-              <ColumnDirective
-                field="GUID"
-                haederText="GUID"
-                visible={false}
-                isPrimaryKey={true}
+            <Input
+              key={`date_to_date_purchaseTransaction`}
+              type={"date"}
+              label={"Date To"}
+              name={"toDate"}
+              enabled={formDetails.selectedPeriod == 10 ? true : false}
+              value={formDetails.toDate}
+              onChange={handleChange}
+            />
+            {isLoading ? null : (
+              <Button
+                visible={formDetails.selectedPeriod == 10 ? showRefresh : false}
+                name={"submit"}
+                key={"form_trabsaction"}
+                btnText={"Refresh"}
+                btnType={"button"}
+                // align={control.align}
+                onClick={handleSubmit}
               />
-              <ColumnDirective
-                field="VCHTYPE"
-                headerText="Voucher Type"
-                width="150"
-                textAlign="left"
-                allowEditing={false}
-              />
-              <ColumnDirective
-                field="VOUCHERNUMBER"
-                headerText="Voucher Number"
-                width="150"
-                textAlign="left"
-                allowEditing={false}
-              />
-              <ColumnDirective
-                field="DATE"
-                headerText="DATE"
-                width="150"
-                textAlign="left"
-                allowEditing={false}
-              />
-              <ColumnDirective
-                field="PARTYLEDGERNAME"
-                headerText="Ledger Name"
-                width="150"
-                textAlign="left"
-                allowEditing={false}
-              />
-              <ColumnDirective
-                field="EFFECTIVEDATE"
-                headerText="Effective Date"
-                width="150"
-                textAlign="left"
-                allowEditing={false}
-              />
-              <ColumnDirective
-                field="MASTERID"
-                headerText="Master ID"
-                width="150"
-                textAlign="left"
-                allowEditing={false}
-                visible={false}
-              />
-              <ColumnDirective
-                field="ALTERID"
-                headerText="Alter ID"
-                width="150"
-                textAlign="left"
-                allowEditing={false}
-                visible={false}
-              />
-              <ColumnDirective
-                field="REFERENCE"
-                headerText="Refrence"
-                width="150"
-                textAlign="left"
-                allowEditing={false}
-              />
-              <ColumnDirective
-                field="REFERENCEDATE"
-                headerText="Refrence Date"
-                width="150"
-                textAlign="left"
-                allowEditing={false}
-              />
+            )}
+          </InputRow>
+          {isLoading ? (
+            <React.Fragment>Loading...</React.Fragment>
+          ) : (
+            <GridComponent
+              locale="en-Us"
+              id="Wgt_DelearUiGrid_id"
+              key="Wgt_DelearUiGrid_id"
+              allowTextWrap={true}
+              allowResizing={false}
+              dataSource={parentGridData}
+              height={"400px"}
+              ref={childGridInstance}
+              allowPaging={true}
+              allowSelection={true}
+              gridLines="Both"
+              rowHeight={25}
+              pageSettings={{ pageSize: 15, pageCount: 10 }}
+              allowFiltering={true}
+              filterSettings={{ type: "Excel" }}
+              allowExcelExport={true}
+              allowSorting={true}
+              childGrid={orderChildGridOptions}
+              detailDataBound={onLoad}
+            >
+              <ColumnsDirective>
+                <ColumnDirective
+                  field="GUID"
+                  haederText="GUID"
+                  visible={false}
+                  isPrimaryKey={true}
+                />
+                <ColumnDirective
+                  field="VCHTYPE"
+                  headerText="Voucher Type"
+                  width="150"
+                  textAlign="left"
+                  allowEditing={false}
+                />
+                <ColumnDirective
+                  field="VOUCHERNUMBER"
+                  headerText="Voucher Number"
+                  width="150"
+                  textAlign="left"
+                  allowEditing={false}
+                />
+                <ColumnDirective
+                  field="DATE"
+                  headerText="DATE"
+                  width="150"
+                  textAlign="left"
+                  allowEditing={false}
+                />
+                <ColumnDirective
+                  field="PARTYLEDGERNAME"
+                  headerText="Ledger Name"
+                  width="150"
+                  textAlign="left"
+                  allowEditing={false}
+                />
+                <ColumnDirective
+                  field="EFFECTIVEDATE"
+                  headerText="Effective Date"
+                  width="150"
+                  textAlign="left"
+                  allowEditing={false}
+                />
+                <ColumnDirective
+                  field="MASTERID"
+                  headerText="Master ID"
+                  width="150"
+                  textAlign="left"
+                  allowEditing={false}
+                  visible={false}
+                />
+                <ColumnDirective
+                  field="ALTERID"
+                  headerText="Alter ID"
+                  width="150"
+                  textAlign="left"
+                  allowEditing={false}
+                  visible={false}
+                />
+                <ColumnDirective
+                  field="REFERENCE"
+                  headerText="Refrence"
+                  width="150"
+                  textAlign="left"
+                  allowEditing={false}
+                />
+                <ColumnDirective
+                  field="REFERENCEDATE"
+                  headerText="Refrence Date"
+                  width="150"
+                  textAlign="left"
+                  allowEditing={false}
+                />
 
-              <ColumnDirective
-                field="NARRATION"
-                headerText="Narration"
-                width="150"
-                textAlign="left"
-                allowEditing={false}
-                visible={false}
+                <ColumnDirective
+                  field="NARRATION"
+                  headerText="Narration"
+                  width="150"
+                  textAlign="left"
+                  allowEditing={false}
+                  visible={false}
+                />
+              </ColumnsDirective>
+              <Inject
+                services={[
+                  DetailRow,
+                  CommandColumn,
+                  Freeze,
+                  Page,
+                  Filter,
+                  Toolbar,
+                  ExcelExport,
+                  Sort,
+                  ForeignKey,
+                ]}
               />
-            </ColumnsDirective>
-            <Inject
-              services={[
-                DetailRow,
-                CommandColumn,
-                Freeze,
-                Page,
-                Filter,
-                Toolbar,
-                ExcelExport,
-                Sort,
-                ForeignKey,
-              ]}
-            />
-          </GridComponent>
-        )}
+            </GridComponent>
+          )}
+        </div>
       </div>
     </>
   );

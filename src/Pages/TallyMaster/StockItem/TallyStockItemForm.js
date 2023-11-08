@@ -29,7 +29,6 @@ export const TallyStockItemForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Company"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -44,7 +43,6 @@ export const TallyStockItemForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Name"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -67,7 +65,6 @@ export const TallyStockItemForm = () => {
             popupHeight="185px"
             placeholder="Parent"
             text={true}
-            cssClass="e-outline"
             // enabled={formEditable}
             // handleChange={handleChange}
             allowFiltering={true}
@@ -87,7 +84,6 @@ export const TallyStockItemForm = () => {
             popupHeight="185px"
             placeholder="Category"
             text={true}
-            cssClass="e-outline"
             // enabled={formEditable}
             // handleChange={handleChange}
             allowFiltering={true}
@@ -102,7 +98,6 @@ export const TallyStockItemForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Category Name"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -117,7 +112,6 @@ export const TallyStockItemForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Description"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -132,7 +126,6 @@ export const TallyStockItemForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Costing Method"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -147,7 +140,6 @@ export const TallyStockItemForm = () => {
             id="comapanyName"
             type="text"
             placeholder="UOM"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -164,7 +156,6 @@ export const TallyStockItemForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Alt UOM"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -179,7 +170,6 @@ export const TallyStockItemForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Conversion"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -194,7 +184,6 @@ export const TallyStockItemForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Denominator"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -209,7 +198,6 @@ export const TallyStockItemForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Opening Balance"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -226,7 +214,6 @@ export const TallyStockItemForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Opening Value"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}
@@ -241,7 +228,6 @@ export const TallyStockItemForm = () => {
             id="comapanyName"
             type="text"
             placeholder="Opening Rate"
-            cssClass="e-outline"
             floatLabelType="Auto"
             // enabled={formEditable}
             // value={fields.schemeCode.value}

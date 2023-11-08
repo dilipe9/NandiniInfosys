@@ -56,8 +56,9 @@ export default function Dashboard() {
   }, [CompanyID]);
 
   return (
-    <div className={styles.mainContainer}>
-      {/* <div className={styles.wareHouseTopSection}>
+    <div className="main_content_wrapper">
+      <div className={styles.mainContainer}>
+        {/* <div className={styles.wareHouseTopSection}>
         <div className={styles.cardContainer}>
           {warHouseData?.map((item, index) => {
             const imagePath = imageMapping[item?.Name];
@@ -66,9 +67,10 @@ export default function Dashboard() {
         </div>
       </div> */}
 
-      <LostandDamage />
-      <SummaryWareHouse />
-      <QuantityGraph />
+        <LostandDamage />
+        <SummaryWareHouse />
+        <QuantityGraph />
+      </div>
     </div>
   );
 }

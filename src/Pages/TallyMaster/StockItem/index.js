@@ -5,17 +5,19 @@ import { ActionIcons } from "../../../components/ActionIcon";
 const TallyStockItem = () => {
   return (
     <div className="main_content_wrapper">
-      <ActionIcons
-        edit={true}
-        editState={true}
-        save={true}
-        saveState={false}
-        reset={true}
-        resetState={false}
-        add={true}
-        addState={true}
-      />
-      <TallyStockItemForm />
+      <div className="main_content_padding">
+        <ActionIcons
+          edit={true}
+          editState={true}
+          save={true}
+          saveState={false}
+          reset={true}
+          resetState={false}
+          add={true}
+          addState={true}
+        />
+        <TallyStockItemForm />
+      </div>
     </div>
   );
 };
