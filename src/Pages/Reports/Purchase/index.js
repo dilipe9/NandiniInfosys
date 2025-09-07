@@ -23,9 +23,11 @@ import {
 } from "@syncfusion/ej2-react-grids";
 import { DetailRow, Inject } from "@syncfusion/ej2-react-grids";
 import { dateFormat } from "../../../utilities/utll";
+import { Context } from "../../../store/store";
 
 const PurchaseTransaction = () => {
   let childGridInstance = useRef();
+  const { CompanyID } = React.useContext(Context);
   const uid = useId();
   const [formDetails, setFormDetails] = useState({
     selectedPeriod: "-1",
@@ -67,6 +69,7 @@ const PurchaseTransaction = () => {
           TransactionType: "Purchase",
           FromDate: newDetails.fromDate,
           ToDate: newDetails.toDate,
+          CompanyId: CompanyID,
         };
         saveApi(payload);
       }
@@ -78,6 +81,7 @@ const PurchaseTransaction = () => {
       TransactionType: "Purchase",
       FromDate: formDetails.fromDate,
       ToDate: formDetails.toDate,
+      CompanyId: CompanyID,
     };
     saveApi(payload);
   };
@@ -94,7 +98,10 @@ const PurchaseTransaction = () => {
           response.data.TRANSACTIONS.length > 0
         ) {
           response.data.TRANSACTIONS.map((val) => {
-            if (val.ALLLEDGERENTRIES.length > 0) {
+            if (
+              Array.isArray(val.ALLLEDGERENTRIES) &&
+              val.ALLLEDGERENTRIES.length > 0
+            ) {
               val.ALLLEDGERENTRIES.map((itm) => {
                 if (itm.ISDEEMEDPOSITIVE) {
                   itm.title = `(${itm.LEDGERNAME}) ${itm.AMOUNT} (DR)`;
@@ -105,6 +112,8 @@ const PurchaseTransaction = () => {
             }
           });
           setParentGridData(response.data.TRANSACTIONS);
+        } else {
+          setParentGridData([]);
         }
       }
       setLoading(false);

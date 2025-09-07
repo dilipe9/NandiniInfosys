@@ -43,13 +43,6 @@ export const fieldsMap = {
       width: "200",
       visible: true,
     },
-    {
-      field: "CreatedDate",
-      headerText: "Uploaded On",
-      width: "160",
-      visible: true,
-    },
-    { field: "Status", headerText: "Status", width: "140", visible: true },
   ],
   company: [
     { field: "RemoteCmpName", headerText: "Name", width: "150", visible: true },
@@ -128,12 +121,6 @@ export const fieldsMap = {
       width: "160",
       visible: true,
     },
-    {
-      field: "CreatedDate",
-      headerText: "Uploaded On",
-      width: "160",
-      visible: true,
-    },
   ],
   costCategory: [
     {
@@ -143,14 +130,6 @@ export const fieldsMap = {
       visible: true,
     },
     { field: "Name", headerText: "Name", width: "100", visible: true },
-    {
-      field: "CreatedDate",
-      headerText: "Uploaded On",
-      width: "170",
-      visible: true,
-    },
-
-    { field: "Status", headerText: "Status", width: "130", visible: true },
   ],
   costCenter: [
     {
@@ -167,14 +146,6 @@ export const fieldsMap = {
       width: "150",
       visible: true,
     },
-
-    {
-      field: "CreatedDate",
-      headerText: "Uploaded On",
-      width: "150",
-      visible: true,
-    },
-    { field: "Status", headerText: "Status", width: "130", visible: true },
   ],
   group: [
     {
@@ -204,14 +175,6 @@ export const fieldsMap = {
       width: "150",
       visible: true,
     },
-    {
-      field: "CreatedDate",
-      headerText: "Uploaded ON",
-      width: "170",
-      visible: true,
-    },
-    ,
-    { field: "IsActive", headerText: "Status", width: "130", visible: true },
   ],
   stockCategory: [
     {
@@ -223,18 +186,11 @@ export const fieldsMap = {
     { field: "Name", headerText: "Name", width: "130", visible: true },
 
     {
-      field: "ParentGUID",
+      field: "ParentName",
       headerText: "Parent",
       width: "200",
       visible: true,
     },
-    {
-      field: "CreatedDate",
-      headerText: "Uploaded ON",
-      width: "170",
-      visible: true,
-    },
-    { field: "Status", headerText: "Status", width: "130", visible: true },
   ],
   stockGodown: [
     {
@@ -246,18 +202,11 @@ export const fieldsMap = {
     { field: "Name", headerText: "Name", width: "130", visible: true },
 
     {
-      field: "ParentGUID",
+      field: "ParentName",
       headerText: "Parent",
       width: "200",
       visible: true,
     },
-    {
-      field: "CreatedDate",
-      headerText: "Uploaded ON",
-      width: "170",
-      visible: true,
-    },
-    { field: "Status", headerText: "Status", width: "130", visible: true },
   ],
   stockGroup: [
     {
@@ -269,18 +218,11 @@ export const fieldsMap = {
     { field: "Name", headerText: "Name", width: "130", visible: true },
 
     {
-      field: "ParentGUID",
+      field: "ParentName",
       headerText: "Parent",
       width: "200",
       visible: true,
     },
-    {
-      field: "CreatedDate",
-      headerText: "Uploaded ON",
-      width: "170",
-      visible: true,
-    },
-    { field: "Status", headerText: "Status", width: "130", visible: true },
   ],
   stockUnit: [
     {
@@ -303,13 +245,6 @@ export const fieldsMap = {
       width: "160",
       visible: true,
     },
-    {
-      field: "CreatedDate",
-      headerText: "Uploaded On",
-      width: "160",
-      visible: true,
-    },
-    { field: "Status", headerText: "Status", width: "130", visible: true },
   ],
   StockItem: [
     {
@@ -321,18 +256,12 @@ export const fieldsMap = {
     { field: "Name", headerText: "Name", width: "130", visible: true },
 
     {
-      field: "ParentGUID",
+      field: "ParentName",
       headerText: "Group",
       width: "200",
       visible: true,
     },
 
-    {
-      field: "CategoryGUID",
-      headerText: "Category",
-      width: "150",
-      visible: true,
-    },
     {
       field: "CategoryName",
       headerText: "Category Name",
@@ -354,14 +283,14 @@ export const fieldsMap = {
     },
 
     {
-      field: "UomGUID",
+      field: "UOMname",
       headerText: "UOM",
       width: "130",
       visible: true,
     },
 
     {
-      field: "AltuomGUID",
+      field: "AltuomName",
       headerText: "Alt UOM",
       width: "180",
       visible: true,
@@ -397,13 +326,6 @@ export const fieldsMap = {
       width: "150",
       visible: true,
     },
-    {
-      field: "CreatedDate",
-      headerText: "Uploaded ON",
-      width: "170",
-      visible: true,
-    },
-    { field: "Status", headerText: "Status", width: "120", visible: true },
   ],
   voucherType: [
     {
@@ -422,18 +344,11 @@ export const fieldsMap = {
     },
 
     {
-      field: "ParentGUID",
+      field: "ParentName",
       headerText: "Parent ",
       width: "200",
       visible: true,
     },
-    {
-      field: "CreatedDate",
-      headerText: "Uploaded ON",
-      width: "170",
-      visible: true,
-    },
-    { field: "Status", headerText: "Status", width: "120", visible: true },
   ],
   settingMaster: [
     {
@@ -628,27 +543,6 @@ export const fieldsMap = {
       width: "160",
       visible: true,
     },
-    {
-      field: "IsCancelled",
-      headerText: "Is Cancel",
-      width: "160",
-      visible: true,
-    },
-    {
-      field: "IsDeleted",
-      headerText: "Is Delete",
-      width: "160",
-      visible: true,
-    },
-
-    {
-      field: "CreatedDate",
-      headerText: "Uploaded On",
-      width: "160",
-      visible: true,
-    },
-
-    { field: "Status", headerText: "Status", width: "130", visible: true },
   ],
   ledger: [
     {
@@ -724,14 +618,6 @@ export const fieldsMap = {
       width: "190",
       visible: true,
     },
-    {
-      field: "CreatedDate",
-      headerText: "Uploaded ON",
-      width: "170",
-      visible: true,
-    },
-
-    { field: "Status", headerText: "Status", width: "130", visible: true },
   ],
   statistics: [
     { field: "Name", headerText: "Name", width: "150", visible: true },
